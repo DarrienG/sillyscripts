@@ -1,0 +1,6 @@
+#!/usr/bin/env zsh
+
+set -e
+
+echo -n -e "\033]0;TaskWarrior\007"
+nvim +TW

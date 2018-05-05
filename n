@@ -1,0 +1,12 @@
+#!/usr/bin/env zsh
+
+set -e
+
+if [ $# -eq 0 ]
+  then
+    echo "Please enter a note name"
+    exit 1
+fi
+
+echo -n -e "\033]0;$1\007"
+nvim note:"$1"

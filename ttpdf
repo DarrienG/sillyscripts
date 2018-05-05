@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+set -e
+
+if [[ $# -ne 2 ]] ; then
+        echo "Script requires to arguments, input text file and output pdf file"
+        exit 1
+fi
+
+enscript $1 -o - | ps2pdf - $2
