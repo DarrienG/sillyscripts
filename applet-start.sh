@@ -5,3 +5,4 @@ autorandr --change
 sleep 5
 nm-applet & disown
 blueman-applet & disown
+dropbox start
